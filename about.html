@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-logo">
+        <a href="index.html">
+        <img src="images/OneVote_PrimaryLogo_Clr.png" alt="One Vote Logo">
+        </a>
+    </div>
+
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shows.html">Shows</a></li>
+        <li><a href="cast.html">Cast</a></li>
+        <li><a href="auditions.html">Auditions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="donate.html">Donate</a></li>
+    </ul>
+</nav>
+<!-- ABOUT -->
+    <section id="about" class="section">
+        <h1>About the Musical</h1>
+        <p>
+            <b>“One Vote! – The Musical”</b> is an original work by Larry Groce and Todd
+Burge that tells the story of the New England settlers who founded
+Marietta, Ohio, where the Muskingum meets the Ohio River, and how the
+decisions and developments of 1786-1820, helped shape our
+nation. The One Vote! cast by Ephraim Cutler secured Ohio’s entry into
+the Union as a free state. The play features Cutler, “Father of the
+Territory”, Rufus Putnam, and other historical figures, alongside fictional
+characters, including the lead female role, settler Abigail Worthy.
+Dialogue in One Vote! explores the roles of frontier women as well as
+the struggles and resilience of Native peoples and African Americans of
+the era. With a dynamic music mix of pop, rock, Americana, and folk,
+One Vote! blends humor, heart, and history to celebrate the birth of
+democracy in the Northwest Territory. The Northwest Territory Museum
+Society serves as Executive Producer of the project. The show’s debut
+performance is planned for July 2026 in Marietta, Ohio.
+        </p>
+
+        </section> 
+
+    <h1>About the Playwrights</h1>
+
+
+
+<section class="playwright-grid">
+
+    <!-- LARRY -->
+    <div class="playwright-card">
+        <img src="images/larry.jpg" alt="Larry Groce" class="playwright-headshot">
+
+        <h3 class="centered">Larry Groce</h3>
+        <p>
+            <b>Larry Groce</b> is a singer-songwriter and co-founder of Mountain Stage,
+the NPR music program in its 42nd year that’s heard on over 270
+stations. He’s recorded 24 albums spanning Americana, hymns, and
+children’s music, including the 1976 Top 10 hit “Junk Food Junkie.” A
+Grammy nominee for Children’s Record of the Year, he’s made nine
+albums for Walt Disney Records, with several going gold and platinum.
+Larry wrote songs for the musicals Paradise Park–The Musical and Miss
+Dirt Turtle’s Garden Club, both produced multiple times. Inducted into the
+West Virginia Music and Broadcasting Halls of Fame, he’s received the
+Governor’s Award for Leadership in the Arts and has received three
+honorary doctorates.
+            <br><br>
+            <a href="https://www.larrygroce.com" target="_blank">www.larrygroce.com</a>
+        </p>
+    </div>
+
+    <!-- TODD -->
+    <div class="playwright-card">
+        <img src="images/todd.jpg" alt="Todd Burge" class="playwright-headshot">
+
+        <h3 class="centered">Todd Burge</h3>
+        <p>
+            <b>Todd Burge</b> is a West Virginia–based singer-songwriter, playwright, and
+producer known for his witty, heartfelt storytelling and prolific catalog. He
+has released over fifteen albums and
+appeared multiple times on NPR’s Mountain Stage as well as the
+syndicated TV program Songs at the Center. Burge has performed at
+Joe’s Pub and CBGB in New York City and at the Country Music Hall of
+Fame in Nashville. He wrote the music for an adaptation of William
+Shakespeare’s Love’s Labour’s Lost, produced by Hipp-Stage
+Productions and Marietta College. He also leads The Song Colony
+workshops and has taught songwriting at West Virginia University.
+            <br><br>
+            <a href="https://www.toddburge.com" target="_blank">www.toddburge.com</a>
+        </p>
+    </div>
+
+</section>
+
+<section>
+<!-- GROUP PHOTO BELOW BOTH BIOS -->
+<div class="group-photo">
+    <img src="images/OneVote-03.jpg" alt="Playwrights">
+    <p class="image-description">Todd Burge (left), Erin Augenstein (middle), and Larry Groce (right).</p>
+    <br>
+</div>
+
+</section>
+
+<!-- PRODUCTION CONTACTS -->
+<section class="playwright-card contacts-card">
+    <h3 class="centered">Production Contacts</h3>
+
+    <p class="centered">
+        <b>Erin Augenstein</b> – Executive Director<br>
+        erin@mariettamuseums.org<br>
+        <a href="tel:7403733750">740-373-3750</a>
+
+        <br><br>
+
+        <b>Todd Burge</b> – Talent Contact<br>
+        OneVoteMusical@gmail.com<br>
+        <a href="tel:3044812766">304-481-2766</a>
+    </p>
+</section>
+
+<div id="footer-placeholder"></div>
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        });
+</script>
+
+</body>
+    </html>
+    

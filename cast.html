@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-logo">
+        <a href="index.html">
+        <img src="images/OneVote_PrimaryLogo_Clr.png" alt="One Vote Logo">
+        </a>
+    </div>
+
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shows.html">Shows</a></li>
+        <li><a href="cast.html">Cast</a></li>
+        <li><a href="auditions.html">Auditions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="donate.html">Donate</a></li>
+    </ul>
+</nav>
+
+<!-- CAST -->
+    <section id="cast" class="section">
+        <h1>Coming March 2026</h1>
+        <!-- <div class="cast-grid">
+            <div class="cast-card">
+                <img src="images/placeholder.jpg" alt="Cast Member">
+                <h3>Actor Name</h3>
+                <p>Role</p>
+            </div>
+            <div class="cast-card">
+                <img src="images/placeholder.jpg" alt="Cast Member">
+                <h3>Actor Name</h3>
+                <p>Role</p>
+            </div>
+            <div class="cast-card">
+                <img src="images/placeholder.jpg" alt="Cast Member">
+                <h3>Actor Name</h3>
+                <p>Role</p>
+            </div> -->
+        </div>
+    </section>
+
+ <div id="footer-placeholder"></div>
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        });
+</script>
+</body>
+</html>

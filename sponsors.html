@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sponsors | One Vote! The Musical</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/OneVote_PrimaryLogo_Clr.png" alt="One Vote Logo">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shows.html">Shows</a></li>
+            <li><a href="cast.html">Cast</a></li>
+            <li><a href="auditions.html">Auditions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="sponsors.html" class="active">Sponsors</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="section">
+
+        <h1>Our Sponsors</h1>
+
+        <p style="max-width: 700px; margin: 0 auto 40px; text-align: center;">
+            We are deeply grateful to the organizations and businesses that make 
+            <strong>One Vote! The Musical</strong> possible. Their support helps bring 
+            original theatre to our community.
+        </p>
+
+<div class="donate-section" style="margin-bottom: 40px;">
+            
+    <div class="sponsor-logo">
+        
+    </div>
+                <a href="https://mariettamuseums.org">
+    <img src="images/sponsor images/nwtmuseum logo vrt.png" alt="America 250 Ohio"></a>
+
+        </div>
+
+        <!-- Sponsor Card -->
+        <div class="donate-section" style="margin-bottom: 40px;">
+                <a href="https://www.ohiohistory.org/ohio-commission-for-the-u-s-semiquincentennial/">
+    <img src="images/sponsor images/America 250-OH logo.jpg" alt="America 250 Ohio"></a>
+
+        </div>
+
+        <!-- Duplicate This Block For More Sponsors -->
+
+        <div class="donate-section" style="margin-bottom: 40px;"> 
+    <a href="https://oac.ohio.gov/home">
+    <img src="images/sponsor images/ohio_arts_council_logo_Blank.png" alt="Ohio Arts Council"></a>
+
+        </div>
+
+        <p class="image-description">One Vote! The Musical is funded in part by the America 250-Ohio Commission. Any views, findings, conclusions or recommendations expressed in One Vote! The Musical do not necessarily represent those of the America 250-Ohio Commission.</p>
+
+    </div>
+
+   <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        });
+</script>
+
+</body>
+</html>

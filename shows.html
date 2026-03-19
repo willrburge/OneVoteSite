@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-logo">
+        <a href="index.html">
+        <img src="images/OneVote_PrimaryLogo_Clr.png" alt="One Vote Logo">
+        </a>
+    </div>
+
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shows.html">Shows</a></li>
+        <li><a href="cast.html">Cast</a></li>
+        <li><a href="auditions.html">Auditions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="donate.html">Donate</a></li>
+    </ul>
+</nav>
+<!-- SHOWS -->
+    <section id="shows" class="section">
+        <h1>Upcoming Shows</h1>
+        <p>Dates and locations coming soon.</p>
+    </section>
+
+    <div id="footer-placeholder"></div>
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        });
+</script>
+</body>
+</html>

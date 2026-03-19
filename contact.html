@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-logo">
+        <a href="index.html">
+        <img src="images/OneVote_PrimaryLogo_Clr.png" alt="One Vote Logo">
+        </a>
+    </div>
+
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shows.html">Shows</a></li>
+        <li><a href="cast.html">Cast</a></li>
+        <li><a href="auditions.html">Auditions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="donate.html">Donate</a></li>
+    </ul>
+</nav>
+<!-- CONTACT -->
+    <section class="contact-card">
+    <h2>Contact Us</h2>
+
+    <p class="contact-text">
+        Have questions about One Vote! The Musical, the production, or upcoming performances?
+        We’d love to hear from you.
+    </p>
+
+    <div class="contact-info">
+        <p>
+            <strong>General Inquiries</strong><br>
+            <a href="mailto:OneVoteMusical@gmail.com">OneVoteMusical@gmail.com</a><br>
+            <a href="tel:3044812766">304‑481‑2766</a>
+        </p>
+
+        <p>
+            <strong>Executive Director</strong><br>
+            <a href="mailto:erin@mariettamuseums.org">erin@mariettamuseums.org</a><br>
+            <a href="tel:7403733750">740‑373‑3750</a>
+        </p>
+    </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        });
+</script>
+</body>
+</html>
