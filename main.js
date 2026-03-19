@@ -23,3 +23,31 @@ fetch("footer.html")
       document.getElementById("footer-placeholder").innerHTML = data;
   })
   .catch(err => console.error("Footer load failed:", err));
+
+  //Slideshow
+/* SLIDESHOW CLICK FUNCTION */
+const modal = document.getElementById("imageModal");
+document.querySelectorAll(".slideshow").forEach(slideshow => {
+    let slides = slideshow.querySelectorAll(".slide");
+    let index = 0;
+
+    slideshow.addEventListener("click", () => {
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+    });
+
+    /* IMAGE ENLARGE */
+    slides.forEach(img => {
+        img.addEventListener("dblclick", (e) => {
+            e.stopPropagation();
+            document.getElementById("modalImage").src = img.src;
+            document.getElementById("imageModal").classList.add("show");
+        });
+    });
+});
+
+/* CLOSE MODAL */
+document.getElementById("imageModal").onclick = function() {
+    this.classList.remove("show");
+};
