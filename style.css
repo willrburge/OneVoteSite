@@ -149,6 +149,8 @@ body {
         padding: 6px 0;
         z-index: 2000;
         box-sizing: border-box;
+        max-height: 80vh;
+        overflow-y: auto;
     }
 
     .nav-links.active {
@@ -271,17 +273,22 @@ h1 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+#about {
+    text-align: center;
+}
+
 /* GRID OF PLAYWRIGHT CARDS */
 .playwright-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
+    width: 100%;
     box-sizing: border-box;
+    justify-content: center;
 }
-
 
 .playwright-card {
     background: #ffffff;
@@ -304,7 +311,7 @@ h1 {
 }
 
 .playwright-card a {
-    color: var(--white);
+    color: var(--blue);
     font-weight: bold;
     text-decoration: none;
 }
@@ -603,5 +610,29 @@ p {
 
     .playwright-headshot {
         max-width: 200px;
+    }
+     .playwright-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+        justify-items: center;
+    }
+
+    .playwright-card {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .group-photo {
+        padding: 0 15px;
+    }
+
+    .contacts-card {
+        width: calc(100% - 30px);
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 25px 20px;
+        box-sizing: border-box;
     }
 }
