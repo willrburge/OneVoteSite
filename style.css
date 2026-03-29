@@ -288,6 +288,18 @@ h1 {
     justify-content: center;
 }
 
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
 .playwright-card {
     background: #ffffff;
     padding: 25px 30px;
@@ -572,18 +584,19 @@ p {
 /* MERCH */
 .merch-card {
     width: 100%;
-    max-width: 300px;
+    max-width: none;
     min-height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
 }
 
 .merch-card .slideshow {
     width: 100%;
-    min-height: 250px;
+    max-width: 100%;
+    min-height: 320px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -591,8 +604,8 @@ p {
 }
 
 .merch-card .slide {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    max-height: 320px;
     object-fit: contain;
     display: none;
 }
@@ -723,4 +736,17 @@ p {
         max-width: 100%;
         margin: 20px auto;
     }
+
+    .store-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+    justify-items: center;
+}
+
+.store-grid .merch-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
 }
