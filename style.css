@@ -739,15 +739,151 @@ p {
     }
 
     .store-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 15px;
-    justify-items: center;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+        justify-items: center;
+    }
+
+    .store-grid .merch-card {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
-.store-grid .merch-card {
+/* SHOWS PAGE */
+.shows-page {
     width: 100%;
-    max-width: 500px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+
+.shows-page h1,
+.shows-page h2,
+.shows-page h3 {
+    text-align: center !important;
+    color: var(--blue) !important;
+}
+
+.shows-page h1 {
+    margin-bottom: 30px;
+}
+
+.shows-card {
+    background: #ffffff;
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.shows-card h2 {
+    font-size: 2rem;
+    margin: 35px 0 18px;
+}
+
+.shows-card h2:first-child {
+    margin-top: 0;
+}
+
+.shows-text {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: left !important;
+}
+
+.center-text,
+.performance-list,
+.address-block {
+    text-align: center !important;
+}
+
+.performance-list,
+.address-block {
+    line-height: 1.9;
+}
+
+.shows-card a {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: underline;
+    word-break: break-word;
+}
+
+.shows-btn {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 35px;
+    padding: 14px 32px;
+    background: var(--blue);
+    color: #ffffff !important;
+    border-radius: 8px;
+    text-decoration: none !important;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* SHOWS PAGE MOBILE */
+@media (max-width: 768px) {
+    .shows-page {
+        padding: 60px 15px;
+    }
+
+    .shows-card {
+        padding: 25px 20px;
+    }
+
+    .shows-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .shows-text {
+        font-size: 1rem;
+    }
+
+    /* FORCE SHOWS PAGE TEXT TO CENTER */
+
+#shows,
+#shows *,
+.shows-page,
+.shows-page *,
+.shows-card,
+.shows-card * {
+    text-align: center !important;
+}
+
+#shows .shows-text,
+#shows p,
+#shows div,
+#shows small,
+#shows a {
+    text-align: center !important;
+}
+
+#shows .shows-card {
+    display: block !important;
+}
+
+#shows .shows-text {
+    display: block !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+#shows a {
+    overflow-wrap: anywhere;
 }
 }
