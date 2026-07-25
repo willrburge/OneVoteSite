@@ -917,3 +917,31 @@ p {
 .cast-card p {
     max-width: 100%;
 }
+
+/* Isolated Grid Layout for Sponsors */
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sponsors-grid img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.sponsors-grid .donate-section {
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+
+/* Mobile responsive single-column layout */
+@media (max-width: 600px) {
+    .sponsors-grid {
+        grid-template-columns: 1fr;
+    }
+}
