@@ -447,7 +447,7 @@ strong, b {
     position: absolute;
     inset: 0;
     z-index: -2;
-    background: var(--ink) url('images/ONEVOTE0726-20.jpg') center 28% / cover no-repeat;
+    background: var(--ink) url('images/ONEVOTE0726-115.jpg') center 32% / cover no-repeat;
 }
 
 .hero::after {
@@ -1064,6 +1064,12 @@ strong, b {
 .sponsors-grid .donate-section:hover {
     transform: translateY(-3px);
     box-shadow: var(--sh-2);
+}
+
+/* Logos that are white/light and vanish on a white card */
+.sponsors-grid .donate-section.on-dark {
+    background: #20232e;
+    border-color: rgba(255, 255, 255, 0.14);
 }
 
 .sponsors-grid a {
