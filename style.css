@@ -90,6 +90,33 @@ body.home-page {
     padding-top: 0;
 }
 
+/* Interior pages: blurred hero photo as an ambient background */
+body:not(.home-page) {
+    background-color: transparent;
+}
+
+body:not(.home-page)::before {
+    content: "";
+    position: fixed;
+    inset: -60px;
+    z-index: -2;
+    background: var(--paper) url('images/ONEVOTE0726-115.jpg') center 28% / cover no-repeat;
+    filter: blur(28px) saturate(1.12) brightness(1.05);
+    pointer-events: none;
+}
+
+body:not(.home-page)::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        linear-gradient(180deg, rgba(246, 243, 236, 0.82) 0%, rgba(246, 243, 236, 0.76) 45%, rgba(246, 243, 236, 0.86) 100%),
+        radial-gradient(1200px 600px at 15% -10%, rgba(110, 136, 203, 0.14), transparent 60%),
+        radial-gradient(1000px 500px at 100% 0%, rgba(200, 162, 76, 0.14), transparent 55%);
+}
+
 img {
     max-width: 100%;
     height: auto;
